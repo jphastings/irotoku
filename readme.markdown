@@ -13,6 +13,16 @@ Why Bother?
 -----------
 Many steganographic techniques require that you have the original file, this technique does not. The only indicator that there may be data hidden is that a noisy picture has been sent as a png (rather than a jpeg) and I'll hopefully have a jpeg compatible one created soon.
 
+Examples
+--------
+Onces you've compiled it, try this:
+	irotoku "test image.png" | less
+And if you've feeling adventurous:
+	irotoku -0 -b 2 "test image 2.png" | mpg123 -
+If you do both at once, in different windows, there's a surprise :P
+By the way, did I mention that [Jonathan Coulton](http://www.jonathancoulton.com/ "JC: Musician, Songwriter") is exceptionally cool?
+I've used one of [my own photos](http://www.flickr.com/photos/jphastings/3005111956/ "Juggletastic") as the second test image.
+
 How to Compile
 --------------
 Make sure you have the GD library installed on your computer, and run:
